@@ -1,7 +1,10 @@
 # traphandle
 
-SNMP traphandler for NET-SNMPD.
+SNMP traphandler for NET-SNMPD written in crystal lang.
+
 Exports traps (or informs) to a redis list using rpush.
+
+More infos (installation etc. see: https://crystal-lang.org/docs/installation/).
 
 ## Installation
 
