@@ -10,7 +10,7 @@ More infos for using and installing crystal-lang:
 
 Pre-compiled binaries included (traphandle and traphandle.static).
 
-Benchmarks:
+Benchmarks for crystal-lang vs. others:
 * https://github.com/kostya/crystal-benchmarks-game
 * https://github.com/kostya/benchmarks
 
