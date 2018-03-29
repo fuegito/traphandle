@@ -20,10 +20,10 @@ redis_l = ARGV[3]
 redis_pw = ARGV[4]
 puts("#{redis_h}:#{redis_p}, list: #{redis_l}, pw: #{redis_pw}") if test == 1
 
+oids = Array(String).new
 source_hostname = STDIN.read_line
 connection_info = STDIN.read_line
 
-oids = Array(String).new
 STDIN.each_line do |line|
   oids << line
 end
@@ -35,7 +35,7 @@ end
 time = Time.utc_now.to_s("%Y-%m-%dT%H:%M:%S.%6NZ")
 trap = "#{time}\n#{source_hostname}\n#{connection_info}\n" + oids.join("\n")
 
-puts trap if test == 1
+puts(trap) if test == 1
 if test == 0
   redis = Redis.new(host: redis_h, port: redis_p, password: redis_pw)
   redis.rpush(redis_l, trap)
