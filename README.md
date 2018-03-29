@@ -18,6 +18,7 @@ Benchmarks for crystal-lang vs. others:
 
     git clone https://github.com/fuegito/traphandle.git
     cd traphandle
+    crystal deps
 
 build "semi-static":
 
