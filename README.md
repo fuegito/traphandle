@@ -10,6 +10,9 @@ More infos for using and installing crystal-lang:
 
 Pre-compiled binaries are included in bin/ (traphandle and traphandle.static).
 
+Compiled on 3.16.0-5-amd64 #1 SMP Debian 3.16.51-3+deb8u1 (2018-01-08) x86_64 GNU/Linux
+
+
 Benchmarks for crystal-lang vs. others:
 * https://github.com/kostya/crystal-benchmarks-game
 * https://github.com/kostya/benchmarks
