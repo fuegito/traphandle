@@ -41,7 +41,7 @@ for testing (no redis connection is done, output to STDOUT):
 
 for production use (in snmptrapd.conf):
 
-    traphandle default <path>/traphandle.static 0 127.0.0.1 6379 snmp <password>
+    traphandle default <path>/traphandle.static 0 127.0.0.1 6379 <redis_list_name> <password>
 
 description:
 
