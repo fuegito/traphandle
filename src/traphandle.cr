@@ -3,7 +3,7 @@ require "redis"
 
 raise("Plese give arguments: test(0=false,1=true), redis_host, redis_port, redis_list, redis_password") if ARGV.size != 5
 test = ARGV[0].to_i
-raise("'test' argument must either be 0 (false) or 1 (true)") unless (test == 1 || test == 0)
+raise("'test' argument must be either 0 (false) or 1 (true)") unless (test == 1 || test == 0)
 redis_h = ARGV[1]
 redis_p = ARGV[2].to_i
 redis_l = ARGV[3]
