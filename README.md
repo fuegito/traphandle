@@ -8,7 +8,8 @@ More infos for using and installing crystal-lang:
 * https://crystal-lang.org/
 * https://crystal-lang.org/docs/installation/
 
-Pre-compiled binaries included (traphandle and traphandle.static).
+Pre-compiled binaries are included in bin/ (traphandle and traphandle.static).
+
 
 Benchmarks for crystal-lang vs. others:
 * https://github.com/kostya/crystal-benchmarks-game
