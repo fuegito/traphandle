@@ -1,7 +1,7 @@
 require "./traphandle/*"
 require "redis"
 
-# raise("Plese give arguments: test(0=false,1=true), redis_host, redis_port, redis_list, redis_password") if ARGV.size != 5
+# raise("Please give arguments: test(0=false,1=true), redis_host, redis_port, redis_list, redis_password") if ARGV.size != 5
 if ARGV.size != 5
   STDERR.puts("Please give arguments: test(0=false,1=true), redis_host, redis_port, redis_list, redis_password")
   exit(1)
