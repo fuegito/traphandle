@@ -19,8 +19,7 @@ STDIN.each_line do |line|
 end
 raise("illegal trap") if oids.size < 1
 time = Time.utc_now.to_s("%Y-%m-%dT%H:%M:%S.%6NZ")
-data = oids.join("\n")
-trap = "#{time}\n#{source_hostname}\n#{connection_info}\n#{data}\n"
+trap = "#{time}\n#{source_hostname}\n#{connection_info}\n" + oids.join("\n")
 
 puts trap if test == 1
 if test == 0
