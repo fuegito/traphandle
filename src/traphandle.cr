@@ -27,7 +27,11 @@ oids = Array(String).new
 STDIN.each_line do |line|
   oids << line
 end
-raise("illegal trap") if oids.size < 1
+# raise("illegal trap") if oids.size < 1
+if oids.size < 1
+  STDERR.puts("illegal trap")
+  exit(2)
+end
 time = Time.utc_now.to_s("%Y-%m-%dT%H:%M:%S.%6NZ")
 trap = "#{time}\n#{source_hostname}\n#{connection_info}\n" + oids.join("\n")
 
