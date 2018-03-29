@@ -7,8 +7,12 @@ Exports traps (or informs) to a redis list using rpush.
 
     git clone https://github.com/fuegito/traphandle.git
     cd traphandle
+
+build "semi-static":
+
     crystal build src/traphandle.cr --release
-or
+or full-static:
+
     crystal build src/traphandle.cr --release --static
 
 ## Usage
