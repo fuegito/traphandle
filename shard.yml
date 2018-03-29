@@ -1,0 +1,18 @@
+name: traphandle
+version: 0.1.0
+
+authors:
+  - Stefan Feurle <stefan.feurle@t-systems.com>
+
+targets:
+  traphandle:
+    main: src/traphandle.cr
+
+crystal: 0.24.2
+
+license: MIT
+
+dependencies:
+  redis:
+    github: stefanwille/crystal-redis
+    version: ~> 1.9.0
