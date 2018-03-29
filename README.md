@@ -28,7 +28,11 @@ or full-static:
 
 ## Usage
 
+for testing (no redis connection is done, output to STDOUT):
     ./traphandle 1 127.0.0.1 6379 snmp hallo123
+
+for production use:
+    ./traphandle 0 127.0.0.1 6379 snmp hallo123
 
 description:
 
