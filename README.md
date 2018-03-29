@@ -5,10 +5,11 @@ Exports traps (or informs) to a redis list using rpush.
 
 ## Installation
 
-git clone https://github.com/fuegito/traphandle.git
-cd traphandle
-"semi-static": crystal build src/traphandle.cr --release
-static: crystal build src/traphandle.cr --release --static
+    git clone https://github.com/fuegito/traphandle.git
+    cd traphandle
+    crystal build src/traphandle.cr --release
+or
+    crystal build src/traphandle.cr --release --static
 
 ## Usage
 
