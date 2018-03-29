@@ -54,4 +54,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Stefan Feurle - creator, maintainer
+- [fuegito](https://github.com/fuegito) Stefan Feurle - creator, maintainer
