@@ -8,6 +8,8 @@ More infos for using and installing crystal-lang:
 * https://crystal-lang.org/
 * https://crystal-lang.org/docs/installation/
 
+Pre-compiled binaries included (traphandle and traphandle.static).
+
 Benchmarks:
 * https://github.com/kostya/crystal-benchmarks-game
 * https://github.com/kostya/benchmarks
@@ -26,11 +28,11 @@ or full-static:
 
 ## Usage
 
-    /traphandle 1 127.0.0.1 6379 snmp hallo123
+    ./traphandle 1 127.0.0.1 6379 snmp hallo123
 
 description:
 
-/traphandle <test = 0|1> <redis_host> <redis_port> <redis_list_name> <redis_password>
+traphandle <test = 0|1> <redis_host> <redis_port> <redis_list_name> <redis_password>
 
 ## Development
 
