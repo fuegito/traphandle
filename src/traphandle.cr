@@ -37,8 +37,8 @@ trap = "#{time}\n#{source_hostname}\n#{connection_info}\n" + oids.join("\n")
 
 puts(trap) if test == 1
 if test == 0
-  redis = Redis.new(host: redis_h, port: redis_p, password: redis_pw)
-  redis.rpush(redis_l, trap)
-  redis.close
+  Redis.open(host: redis_h, port: redis_p, password: redis_pw) do |redis|
+    redis.rpush(redis_l, trap)
+  end
 end
 exit(0)
