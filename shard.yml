@@ -12,7 +12,12 @@ crystal: 0.24.2
 
 license: MIT
 
-dependencies:
-  redis:
-    github: stefanwille/crystal-redis
-    version: ~> 1.9.0
+ dependencies:
+   redis:
+     github: stefanwille/crystal-redis
+     version: ~> 1.9.0
+
+# dependencies:
+#   redis:
+#     github: fuegito/crystal-redis
+#     version: ~> 1.9.0

@@ -33,11 +33,10 @@ if oids.size < 1
   exit(2)
 end
 time = Time.utc_now.to_s("%Y-%m-%dT%H:%M:%S.%6NZ")
-trap = "#{time}\n#{source_hostname}\n#{connection_info}\n" + oids.join("\n")
+trap = "#{time}\n#{source_hostname}\n#{connection_info}\n" + oids.join('\n')
 
 puts(trap) if test == 1
 if test == 0
-<<<<<<< HEAD
   begin
     Redis.open(host: redis_h, port: redis_p, password: redis_pw) do |redis|
       redis.rpush(redis_l, trap)
@@ -45,10 +44,6 @@ if test == 0
   rescue
     STDERR.puts("connection to redis server #{redis_h}:#{redis_p} failed!")
     exit(3)
-=======
-  Redis.open(host: redis_h, port: redis_p, password: redis_pw) do |redis|
-    redis.rpush(redis_l, trap)
->>>>>>> f9ea5046b95c1ac3b00a7e172a8048253c3fd2c5
   end
 end
 exit(0)

@@ -1,6 +1,6 @@
 version: 1.0
 shards:
   redis:
-    github: stefanwille/crystal-redis
+    github: fuegito/crystal-redis
     version: 1.9.0
 
